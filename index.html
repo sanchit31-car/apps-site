@@ -122,6 +122,8 @@ ul.kv li:last-child { border-bottom: 0; }
 .stars { color: var(--warn); letter-spacing: 1px; }
 .rv-title { font-weight: 600; font-size: 14px; margin-top: 2px; }
 .rv-body { font-size: 13px; color: var(--ink-2); }
+.caveat { font-size: 12px; color: var(--ink-2); margin: 14px 0 0; line-height: 1.5; }
+.usage .facts { margin-top: 12px; }
 footer { font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-height: 1.7; padding: 0 4px; }
 @media (prefers-reduced-motion: no-preference) { .chart .mark { transition: opacity .12s; } }
 @media (max-width: 420px) { .hero-num { font-size: 44px; } body { padding: 14px 10px 48px; } section, .strip, .hero { padding: 14px; border-radius: 10px; } .ledger { padding: 14px 8px 12px; } }
@@ -130,7 +132,7 @@ footer { font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-he
 <main>
   <header class="masthead">
     <div>
-      <div class="eyebrow">App Store · updated 6 Sep 2026, 06:00 Sydney</div>
+      <div class="eyebrow">App Store · updated 6 Sep 2026, 10:45 Sydney</div>
       <h1>Storefront</h1>
     </div>
     <div class="through">sales through 4 Sep 2026 · analytics through 3 Sep 2026</div>
@@ -224,6 +226,26 @@ footer { font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-he
   </div>
 </section>
 
+  <section class="usage">
+    <h2>RecipeFetch inside the app <span class="muted">from its own database</span></h2>
+    
+    <div class="facts">
+      <div><span class="k">Accounts created</span><span class="v">16 <span class="muted">+4 in 7 days</span></span></div>
+      <div><span class="k">Recipes saved</span><span class="v">41 <span class="muted">by 10 people, +5 in 7 days</span></span></div>
+      <div><span class="k">Extractions counted by the quota meter</span><span class="v">9 <span class="muted">by 3 accounts; the meter was reset during testing, so saved recipes is the better lifetime figure</span></span></div>
+      <div><span class="k">Extractions with detail logged</span><span class="v">11 <span class="muted">64% succeeded, 25.2 s avg</span></span></div>
+      <div><span class="k">Active people, 7 / 28 days</span><span class="v">0 / 1</span></div>
+      <div><span class="k">Came back on another day</span><span class="v">1</span></div>
+      <div><span class="k">Install → first recipe</span><span class="v">-39.3 h <span class="muted">avg</span></span></div>
+    </div>
+    <div class="two">
+      <div><h3>Where sessions come from</h3><ul class="kv"><li><span>Australia</span><span class="num">2</span></li></ul></div>
+      <div><h3>Extraction failures</h3><ul class="kv"><li><span>unknown</span><span class="num">4</span></li></ul></div>
+    </div>
+    <h3>Channels people extract from</h3><ul class="kv"><li><span>Nicole</span><span class="num">3</span></li><li><span>Nagi</span><span class="num">1</span></li><li><span>John Mitzewich</span><span class="num">1</span></li><li><span>Jamie Oliver</span><span class="num">1</span></li><li><span>A Simple Palate</span><span class="num">1</span></li></ul>
+    <p class="caveat">Accounts, saved recipes and the extraction total count everyone. Success rate, failures, sessions, countries and return visits come only from the 4 people who switched on “share usage data” in Settings — off by default until the next app update. Average recipe view 17 s. Mirrored 2026-09-06 00:44 UTC.</p>
+  </section>
+
   <section>
     <h2>First-time downloads by month, 2026</h2>
     <div class="legend"><span><span class="swatch s1"></span>Sit to Stand</span><span><span class="swatch s2"></span>RecipeFetch</span></div>
@@ -232,7 +254,7 @@ footer { font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-he
   </section>
 
   <footer>
-    Last pull 2026-09-05 20:00 UTC · Apple publishes a day about 24 h after it ends; a day with no transactions has no report.<br>
+    Last pull 2026-09-06 00:44 UTC · Apple publishes a day about 24 h after it ends; a day with no transactions has no report.<br>
     Source: App Store Connect Sales &amp; Trends and Analytics Reports APIs; ratings from the public AU and US storefronts.
   </footer>
 </main>
